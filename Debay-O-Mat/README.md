@@ -14,15 +14,15 @@ All parameters can be altered through the commandline:
 
 ## Default Parameters:
 ```doRescale = false;
-resize = 1.0; // ==1.0  deactivates Rescaling entirely
+resize = 1.0; 				// ==1.0  deactivates Rescaling entirely
 rescaleMethod = 0;
 debayeringMethod = 7;
 doBlur = true;
 patternSize = 7;
 randomMix = 0.15; 			// only for debayeringMethod = 3, 5, 7 - DEFAULT: 33%, FAVORITE: 15%
 randIts = 5;				// only for debyeringMethod = 3, 5, 7
-debayeringVariance = 2.5;		//only for debyeringMethod == 7
-blurVariance = 5.0;			//DEFAULT: 2.5, FAVORITE: 5.0			
+debayeringVariance = 2.5;	//only for debyeringMethod == 7
+blurVariance = 5.0;			//DEFAULT: 2.5, FAVORITE: 5.0
 doGrain = false;
 grainPatternSize = 5;
 mixGrain = 0.33;
@@ -39,4 +39,8 @@ DEBAYERING METHOD 3 (With random choice)
 DEBAYERING METHOD 5 (13Pixel Pattern with random choice)
 DEBAYERING METHOD 6 (NxN Pixel Pattern with random choice)
 DEBAYERING METHOD 7 (Experimental NxN Matrix with gaussian weight```
+
+#References
+The general idea behind this debayering method "SHOODAK" is explained here:
+https://wiki.apertus.org/index.php/Shoodak
 
