@@ -1,17 +1,17 @@
 # "Debay-O-Mat" Debayering Test Tool
-
 Copyright: Peter Sreckovic
 
 # License
-Thi software is released under GNU GPL V3 as is and without any warranty.
+This software is released under GNU GPL V3 as is and without any warranty.
+
+# Compiling
+GNUStep framework is required
 
 # Usage
-
 All parameters can be altered through the commandline:
 Debay-O-Mat doGrain=true resize=0.5 colorRedo=false
 
-##Default Parameters:
-
+## Default Parameters:
 doRescale = false;
 resize = 1.0; // ==1.0  deactivates Rescaling entirely
 rescaleMethod = 0;
@@ -29,8 +29,7 @@ grainDeviation = 5.0;
 colorRedo = true;
 colorCorrectionMethod = 1; 	// 0=gradient, 1=LUT cube
 
-##Debayering Methods
-
+## Debayering Methods
 DEBAYERING METHOD 8 (luminosity - b/w)
 EXPERIMENTAL - DEBAYERING METHOD 10 (black and white Bilinear: green to b/w, red and blue calculated b/w)
 DEBAYERING METHOD 1 (Bilinear)
